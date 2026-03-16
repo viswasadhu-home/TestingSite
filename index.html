@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analog Clock</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Analog Clock</h1>
+      <p class="subtitle">A simple CSS/JS analog clock that updates every second.</p>
+    </header>
+
+    <main>
+      <div class="clock">
+        <div class="clock__face">
+          <div class="hand hand--hour" id="hour-hand"></div>
+          <div class="hand hand--minute" id="minute-hand"></div>
+          <div class="hand hand--second" id="second-hand"></div>
+          <div class="center-dot"></div>
+
+          <div class="tick tick--hour" style="--i:0"></div>
+          <div class="tick tick--hour" style="--i:1"></div>
+          <div class="tick tick--hour" style="--i:2"></div>
+          <div class="tick tick--hour" style="--i:3"></div>
+          <div class="tick tick--hour" style="--i:4"></div>
+          <div class="tick tick--hour" style="--i:5"></div>
+          <div class="tick tick--hour" style="--i:6"></div>
+          <div class="tick tick--hour" style="--i:7"></div>
+          <div class="tick tick--hour" style="--i:8"></div>
+          <div class="tick tick--hour" style="--i:9"></div>
+          <div class="tick tick--hour" style="--i:10"></div>
+          <div class="tick tick--hour" style="--i:11"></div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>Local time: <span id="current-time">--:--:--</span></p>
+      </div>
+    </main>
+
+    <footer>
+      <p>Built with HTML, CSS &amp; JavaScript.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
